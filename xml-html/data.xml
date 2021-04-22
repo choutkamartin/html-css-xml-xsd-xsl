@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="data.xsd">
+    <pocitace>
+        <pocitac>
+            <id>1</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="Intel 1150">Core i5 2000</procesor>
+                <grafickaKarta znacka="Nvidia" kapacita="4">GeForce RTX 2080</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="4">Red</disk>
+                    <disk znacka="Western Digital" kapacita="4">Red</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Phantom</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">Nikaragua</skrin>
+                <zdroj znacka="Cooler Master" prikon="400">Green Power</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">MegaFan 3</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta znacka="Realtek">TV 3</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 1000GB</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Stream Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">20000</cena>
+        </pocitac>
+        <pocitac>
+            <id>4</id>
+            <komponenty>
+                <procesor znacka="AMD" socket="Intel 1150">AMD Phenom II X3</procesor>
+                <grafickaKarta znacka="Nvidia" kapacita="4">GeForce RTX 3060</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="2">Red</disk>
+                    <disk znacka="Western Digital" kapacita="2">Red</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR4 4GB</pamet>
+                    <pamet znacka="Kingston">DDR4 4GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Bulldog</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">Nikaragua</skrin>
+                <zdroj znacka="Cooler Master" prikon="400">Green Power</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">CoolFan 5</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika />
+                <televizniKarta znacka="Realtek">TV 3</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 2</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Stream Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">13000</cena>
+        </pocitac>
+        <pocitac>
+            <id>5</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="Intel 1150">Core i5 2000</procesor>
+                <grafickaKarta znacka="Nvidia" kapacita="4">GeForce RTX 1050 Ti</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="4">Red</disk>
+                    <disk znacka="Western Digital" kapacita="1">Green</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR4 8GB</pamet>
+                    <pamet znacka="Kingston">DDR4 8GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Phantom</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">MasterBox</skrin>
+                <zdroj znacka="Cooler Master" prikon="400">Green Power</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">FanMaster 2</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta />
+                <sitovaKarta />
+                <zaznamoveZarizeni />
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">20000</cena>
+        </pocitac>
+        <pocitac>
+            <id>2</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="AMD AM4">Ryzen 12 6000</procesor>
+                <grafickaKarta znacka="AMD" kapacita="4">Radeon HD 5770</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="4">Red 1000GB</disk>
+                    <disk znacka="Western Digital" kapacita="4">SSDFX 128GB</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR4 8GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Knight</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">MasterCase</skrin>
+                <zdroj znacka="Cooler Master" prikon="400">Green Power</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">FanMaster 3</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta znacka="Realtek">TV 3</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 4</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Stream Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">26000</cena>
+        </pocitac>
+        <pocitac>
+            <id>8</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="Intel 1150">Core i5 2000</procesor>
+                <grafickaKarta znacka="AMD" kapacita="4">GeForce RTX 2080</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="4">Black</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Warrior</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">MasterBox</skrin>
+                <zdroj znacka="Cooler Master" prikon="400">Red Power</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">Arctic Bear</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">Arctic Freeze</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta znacka="Realtek">TV 3</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 4</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Stream Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="EUR">2000</cena>
+        </pocitac>
+        <pocitac>
+            <id>15</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="Intel 1150">Core i5 2000</procesor>
+                <grafickaKarta znacka="AMD" kapacita="4">Radeon RX 6800 XT</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="1">Blue</disk>
+                    <disk znacka="Western Digital" kapacita="1">Red</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Phantom</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">Elite 342</skrin>
+                <zdroj znacka="Cooler Master" prikon="750">MWE Gold 750</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">Thunder 1000</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta znacka="Realtek">TV 8</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 4</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Record Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">46000</cena>
+        </pocitac>
+        <pocitac>
+            <id>17</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="Intel 1150">Core i5 2000</procesor>
+                <grafickaKarta znacka="Nvidia" kapacita="4">GeForce RTX 3050 Ti</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="1">Red</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Phantom</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">Cosmos</skrin>
+                <zdroj znacka="Cooler Master" prikon="750">V750 SFX Gold</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">Thunder 2000</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta znacka="Realtek">TV 3</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 6</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Stream Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">19000</cena>
+        </pocitac>
+        <pocitac>
+            <id>11</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="Intel 1150">Core i5 2000</procesor>
+                <grafickaKarta znacka="Nvidia" kapacita="4">GeForce RTX 2080</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="2">Red</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Phantom</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">Nikaragua</skrin>
+                <zdroj znacka="Cooler Master" prikon="800">Black Power</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">Thunder 30000</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta znacka="Realtek">TV 3</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 8</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Stream Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">25000</cena>
+        </pocitac>
+        <pocitac>
+            <id>96</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="Intel 1150">Core i5 2000</procesor>
+                <grafickaKarta znacka="Nvidia" kapacita="4000">GeForce RTX 1000</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="128">SSD Meister</disk>
+                    <disk znacka="Western Digital" kapacita="1000">Red</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Phantom</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">MasterBox RGB</skrin>
+                <zdroj znacka="Cooler Master" prikon="300">Modular</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">Thunder 4000</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta znacka="Realtek">TV 3</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 4</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Stream Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                    <kabel znacka="PremiumCord">HDMI</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">18000</cena>
+        </pocitac>
+        <pocitac>
+            <id>144</id>
+            <komponenty>
+                <procesor znacka="Intel" socket="Intel 1151">Core i7 8000</procesor>
+                <grafickaKarta znacka="Nvidia" kapacita="4">GeForce RTX 2080</grafickaKarta>
+                <disky>
+                    <disk znacka="Western Digital" kapacita="4">Red 1000GB</disk>
+                    <disk znacka="Western Digital" kapacita="4">Red 1000GB</disk>
+                </disky>
+                <pameti>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                    <pamet znacka="Kingston">DDR3 4GB</pamet>
+                </pameti>
+                <zakladniDeska znacka="Gigabyte" format="ATX">Phantom</zakladniDeska>
+                <skrin znacka="Cooler Master" delka="250" sirka="50">Nikaragua</skrin>
+                <zdroj znacka="Cooler Master" prikon="450">Double</zdroj>
+                <chlazeni>
+                    <chladic znacka="Noctua">MegaCooler 3</chladic>
+                    <ventilatory>
+                        <ventilator znacka="Noctua">Thunder 6000</ventilator>
+                    </ventilatory>
+                </chlazeni>
+                <optickaMechanika znacka="Verbatim">
+                        CD/RW Optic
+                        </optickaMechanika>
+                <televizniKarta znacka="Realtek">TV 3</televizniKarta>
+                <sitovaKarta znacka="Intel">Ethernet 5</sitovaKarta>
+                <zaznamoveZarizeni znacka="Elgato">Stream Deck</zaznamoveZarizeni>
+                <kabely>
+                    <kabel znacka="PremiumCord">230V</kabel>
+                </kabely>
+            </komponenty>
+            <cena mena="CZK">18000</cena>
+        </pocitac>
+    </pocitace>
+</root>

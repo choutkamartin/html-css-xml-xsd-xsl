@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:attribute name="znacka">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Kingston" />
+                <xs:enumeration value="Gigabyte" />
+                <xs:enumeration value="Cooler Master" />
+                <xs:enumeration value="Noctua" />
+                <xs:enumeration value="Realtek" />
+                <xs:enumeration value="Verbatim" />
+                <xs:enumeration value="PremiumCord" />
+                <xs:enumeration value="Intel" />
+                <xs:enumeration value="Elgato" />
+                <xs:enumeration value="Nvidia" />
+                <xs:enumeration value="Western Digital" />
+                <xs:enumeration value="AMD" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="kapacita">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:pattern value="[1-9][0-9]*" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="mena">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="CZK" />
+                <xs:enumeration value="EUR" />
+                <xs:enumeration value="USD" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="socket">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Intel 1150" />
+                <xs:enumeration value="AMD AM4" />
+                <xs:enumeration value="AMD SP3" />
+                <xs:enumeration value="AMD TR4" />
+                <xs:enumeration value="AMD TRX4" />
+                <xs:enumeration value="AMD WRX8 4094" />
+                <xs:enumeration value="Intel 1151" />
+                <xs:enumeration value="Intel 1156" />
+                <xs:enumeration value="Intel 1200" />
+                <xs:enumeration value="Intel 2011-3" />
+                <xs:enumeration value="Intel 2066" />
+                <xs:enumeration value="Intel 3647" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="format">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="ATX" />
+                <xs:enumeration value="mATX" />
+                <xs:enumeration value="mITX" />
+                <xs:enumeration value="eATX" />
+                <xs:enumeration value="mDTX" />
+                <xs:enumeration value="uATX" />
+                <xs:enumeration value="XL-ATX" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pocitace">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pocitac" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:positiveInteger" name="id" />
+                                        <xs:element name="komponenty">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="procesor" minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                    <xs:attribute ref="socket" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="grafickaKarta" minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                    <xs:attribute ref="kapacita" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="disky">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="disk" maxOccurs="4" minOccurs="1">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute ref="znacka" />
+                                                                                <xs:attribute ref="kapacita" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="pameti">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="pamet" maxOccurs="4" minOccurs="1">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute ref="znacka" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="zakladniDeska">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                    <xs:attribute ref="format" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="skrin" minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                    <xs:attribute type="xs:positiveInteger" name="delka" use="required" />
+                                                                    <xs:attribute type="xs:positiveInteger" name="sirka" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="zdroj" minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                    <xs:attribute type="xs:positiveInteger" name="prikon" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="chlazeni">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="chladic" minOccurs="1">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute ref="znacka" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="ventilatory">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="ventilator">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute ref="znacka" />
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="optickaMechanika">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="televizniKarta">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="sitovaKarta">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="zaznamoveZarizeni">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute ref="znacka" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="kabely">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="kabel" maxOccurs="unbounded" minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute ref="znacka" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="cena">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:positiveInteger">
+                                                        <xs:attribute ref="mena" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

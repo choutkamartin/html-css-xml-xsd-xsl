@@ -1,0 +1,28 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background: #96031a;
+  color: white;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 0.5rem;
+}

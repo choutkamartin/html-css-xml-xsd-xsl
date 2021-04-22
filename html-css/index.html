@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>Bakalářská práce</title>
+  </head>
+  <body>
+    <header>
+      <h2>Bakalářská práce</h2>
+      <small>Webová platforma na strojové učení</small>
+      <small>Tato stránka je mobile-first!</small>
+      <img
+        src="list.svg"
+        onclick="menuOpen()"
+        id="menuButton"
+        alt="Menu button"
+      />
+      <nav id="nav">
+        <ul>
+          <li><a href="#popis-bakalarske-prace">Popis bakalářské práce</a></li>
+          <li><a href="#vyuzite-technologie">Využité technologie</a></li>
+          <li><a href="#zadani-prace">Zadání práce</a></li>
+          <li><a href="#vyuziti-v-praxi">Využití v praxi</a></li>
+          <li><a href="#kontaktni-formular">Kontaktní formulář</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="popis-bakalarske-prace">
+        <h2>Popis BP</h2>
+        <article>
+          <h3>O čem bude</h3>
+          <p>
+            Moje bakalářská práce se bude zabývat vývojem platformy pro přípravu
+            dat vhodných ke strojovému učení.
+          </p>
+          <h4>English</h4>
+          <small
+            >My bachelor thesis will deal with the development of a platform for
+            preparation data suitable for machine learning.</small
+          >
+        </article>
+        <article>
+          <h3>O webové platformě</h3>
+          <p>
+            Tato webová platforma bude umožňovat to, že klienti budou zádavat do
+            tohoto systému data, která budou chtít nějakým způsobem zpracovat.
+            Může se jednat o označení nějakého objektu na obrázku, či označení
+            toho, zda se text, který je na obrazovce jeví jako pozitivní či
+            negativní.
+          </p>
+          <h4>English</h4>
+          <small
+            >This web platform will allow clients to type in this system the
+            data they will want to process in some way. It can be a designation
+            of an object in the image, or a designation whether the text on the
+            screen appears positive or not negative.</small
+          >
+        </article>
+      </section>
+      <section id="vyuzite-technologie">
+        <h2>Využité technologie</h2>
+        <article>
+          <h3>React.js</h3>
+          <p>
+            React je JavaScriptová knihovna pro tvorbu uživatelského rozhraní.
+            Je vyvíjený Facebookem a komunitou samostatných vývojářů a
+            společností. React může být využit jako základ pro tvorbu
+            single-page nebo mobilních aplikací, protože je optimální pro práci
+            s rychle se měnícími daty.
+          </p>
+        </article>
+        <article>
+          <h3>MongoDB</h3>
+          <p>
+            MongoDB je multiplatformní dokumentová databáze. Řadí se mezi NoSQL
+            databáze a místo tradičních relačních databází využívajících tabulky
+            používá dokumenty podobné formátu JSON a dynamické databázové
+            schéma, které umožňuje vytváření a integraci dat pro aplikace
+            jednodušeji a rychleji.
+          </p>
+        </article>
+        <article>
+          <h3>Node.js</h3>
+          <p>
+            Node.js je softwarový systém navržený pro psaní vysoce
+            škálovatelných internetových aplikací, především webových serverů.
+            Programy pro Node.js jsou psané v jazyce JavaScript, hojně
+            využívající model událostí a asynchronní I/O operace pro
+            minimalizaci režie procesoru a maximalizaci výkonu.
+          </p>
+        </article>
+      </section>
+      <section id="zadani-prace">
+        <h2>Zadání práce</h2>
+        <article>
+          <h3>Cíle</h3>
+          <p>
+            Hlavním cílem práce je vytvořit webovou platformu pro přípravu dat
+            vhodných ke strojovému učení na základě označování dat.
+          </p>
+        </article>
+        <article>
+          <h3>Metodika</h3>
+          <p>
+            Na základě analýzy odborné literatury bude provedena syntéza
+            získaných informací. Tyto informace poslouží ke zpracování
+            teoretického východiska. Praktická část práce spočívá ve využití
+            metodiky vývoje softwaru. Dle modelu vodopádu provedeme analýzu
+            požadavků a navrhneme řešení. Implementace bude provedena v
+            programovacím jazyce JavaScript a technologií s ním spojených. Po
+            implementaci bude následovat verifikace, software bude otestován,
+            zda vyhovuje požadavkům a pokud ano, software bude nasazen a
+            udržován. Pomocí logické indukce vyvodíme obecný závěr ze získaných
+            poznatků při vývoji softwaru, navrhneme, jakým směrem by se mohl
+            ubírat a popíšeme, kdo by ho využíval.
+          </p>
+        </article>
+      </section>
+      <section id="vyuziti-v-praxi">
+        <h2>Využití v praxi</h2>
+        <article>
+          <h3>Firmy</h3>
+          <p>
+            Webovou platformu by mohly využít všechny firmy, které se zaobírají
+            umělou technologií. Takovýto projekt by našel spoustu příznivců v
+            řadách autonomního řízení. Například takový Lyft, Uber, Tesla a
+            podobně.
+          </p>
+        </article>
+      </section>
+      <section id="kontaktni-formular">
+        <h2>Máte více dotazů?</h2>
+        <form>
+          <div>
+            <label for="jmeno">Jméno</label>
+            <input type="text" placeholder="Petr Pan" id="jmeno" />
+          </div>
+          <div>
+            <label for="zprava">Zpráva</label>
+            <textarea
+              name="zprava"
+              id="zprava"
+              cols="30"
+              rows="10"
+              placeholder="Dobrý den, rád bych se zeptal."
+            ></textarea>
+          </div>
+          <button>Zaslat</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>Bakalářská práce</div>
+      <small
+        >V roce 2021
+        <a href="https://github.com/choutkamartin" target="_blank"
+          >Martin Choutka</a
+        ></small
+      >
+    </footer>
+  </body>
+</html>
